@@ -289,6 +289,18 @@ If error happens on any one while doing an operation, only the last error is rep
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Implicits$ZipEntryOps.html" title=""></a>
+                        <a href="Implicits$ZipEntryOps.html" title="">
+                          ZipEntryOps
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Implicits$ZipInputStreamOps.html" title=""></a>
+                        <a href="Implicits$ZipInputStreamOps.html" title="">
+                          ZipInputStreamOps
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Implicits$ZipOutputStreamOps.html" title=""></a>
                         <a href="Implicits$ZipOutputStreamOps.html" title="">
                           ZipOutputStreamOps
@@ -722,9 +734,9 @@ e.g. it's last component is removed when it is used as an anchor.
               
         </dd></dl></div>
     </li><li name="better.files.File#copyResource" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="copyResource(name:String)(out:better.files.File):out.type"></a><a id="copyResource(String)(File):out.type"></a>
+      <a id="copyResource(name:String)(destination:better.files.File):destination.type"></a><a id="copyResource(String)(File):destination.type"></a>
       <span class="permalink">
-      <a href="../../better/files/File$.html#copyResource(name:String)(out:better.files.File):out.type" title="Permalink">
+      <a href="../../better/files/File$.html#copyResource(name:String)(destination:better.files.File):destination.type" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -733,12 +745,12 @@ e.g. it's last component is removed when it is used as an anchor.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">copyResource</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="out">out: <a href="File.html" class="extype" name="better.files.File">File</a> = <span class="defval" name='<span class="name"><a href="">File.newTemporaryFile(prefix = name)</a></span>'>...</span></span>)</span><span class="result">: <span class="extype" name="better.files.File.copyResource.out">out</span>.type</span>
+        <span class="name">copyResource</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span name="destination">destination: <a href="File.html" class="extype" name="better.files.File">File</a> = <span class="defval" name='<span class="name"><a href="">File.newTemporaryFile(prefix = name)</a></span>'>...</span></span>)</span><span class="result">: <span class="extype" name="better.files.File.copyResource.destination">destination</span>.type</span>
       </span>
       
       <p class="shortcomment cmt">Copies a resource into a file
 </p><div class="fullcomment"><div class="comment cmt"><p>Copies a resource into a file
-</p></div><dl class="paramcmts block"><dt class="param">out</dt><dd class="cmt"><p>File where resource is copied into, if not specified a temp file is created</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">destination</dt><dd class="cmt"><p>File where resource is copied into, if not specified a temp file is created</p></dd></dl></div>
     </li><li name="better.files.File#currentWorkingDirectory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="currentWorkingDirectory:better.files.File"></a><a id="currentWorkingDirectory:File"></a>
       <span class="permalink">
@@ -1071,6 +1083,38 @@ See: http://stackoverflow.com/questions/676250/different-ways-of-loading-a-file-
       </span>
       
       
+    </li><li name="better.files.File#temporaryDirectory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="temporaryDirectory[U](prefix:String,parent:Option[better.files.File],attributes:better.files.File.Attributes):better.files.ManagedResource[better.files.File]"></a><a id="temporaryDirectory[U](String,Option[File],Attributes):ManagedResource[File]"></a>
+      <span class="permalink">
+      <a href="../../better/files/File$.html#temporaryDirectory[U](prefix:String,parent:Option[better.files.File],attributes:better.files.File.Attributes):better.files.ManagedResource[better.files.File]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">temporaryDirectory</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="File.html" class="extype" name="better.files.File">File</a>] = <span class="symbol">None</span></span>, <span name="attributes">attributes: <a href="#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$$Attributes$.html">Attributes.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<a href="File.html" class="extype" name="better.files.File">File</a>]</span>
+      </span>
+      
+      
+    </li><li name="better.files.File#temporaryFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="temporaryFile[U](prefix:String,suffix:String,parent:Option[better.files.File],attributes:better.files.File.Attributes):better.files.ManagedResource[better.files.File]"></a><a id="temporaryFile[U](String,String,Option[File],Attributes):ManagedResource[File]"></a>
+      <span class="permalink">
+      <a href="../../better/files/File$.html#temporaryFile[U](prefix:String,suffix:String,parent:Option[better.files.File],attributes:better.files.File.Attributes):better.files.ManagedResource[better.files.File]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">temporaryFile</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="suffix">suffix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="File.html" class="extype" name="better.files.File">File</a>] = <span class="symbol">None</span></span>, <span name="attributes">attributes: <a href="#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$$Attributes$.html">Attributes.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<a href="File.html" class="extype" name="better.files.File">File</a>]</span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
       <span class="permalink">
@@ -1087,38 +1131,6 @@ See: http://stackoverflow.com/questions/676250/different-ways-of-loading-a-file-
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="better.files.File#usingTemporaryDirectory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="usingTemporaryDirectory[U](prefix:String,parent:Option[better.files.File],attributes:better.files.File.Attributes)(f:better.files.File=&gt;U):U"></a><a id="usingTemporaryDirectory[U](String,Option[File],Attributes)((File)⇒U):U"></a>
-      <span class="permalink">
-      <a href="../../better/files/File$.html#usingTemporaryDirectory[U](prefix:String,parent:Option[better.files.File],attributes:better.files.File.Attributes)(f:better.files.File=&gt;U):U" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">usingTemporaryDirectory</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="File.html" class="extype" name="better.files.File">File</a>] = <span class="symbol">None</span></span>, <span name="attributes">attributes: <a href="#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$$Attributes$.html">Attributes.default</a></span></span></span>)</span><span class="params">(<span name="f">f: (<a href="File.html" class="extype" name="better.files.File">File</a>) ⇒ <span class="extype" name="better.files.File.usingTemporaryDirectory.U">U</span></span>)</span><span class="result">: <span class="extype" name="better.files.File.usingTemporaryDirectory.U">U</span></span>
-      </span>
-      
-      
-    </li><li name="better.files.File#usingTemporaryFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="usingTemporaryFile[U](prefix:String,suffix:String,parent:Option[better.files.File],attributes:better.files.File.Attributes)(f:better.files.File=&gt;U):U"></a><a id="usingTemporaryFile[U](String,String,Option[File],Attributes)((File)⇒U):U"></a>
-      <span class="permalink">
-      <a href="../../better/files/File$.html#usingTemporaryFile[U](prefix:String,suffix:String,parent:Option[better.files.File],attributes:better.files.File.Attributes)(f:better.files.File=&gt;U):U" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">usingTemporaryFile</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="suffix">suffix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="File.html" class="extype" name="better.files.File">File</a>] = <span class="symbol">None</span></span>, <span name="attributes">attributes: <a href="#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$$Attributes$.html">Attributes.default</a></span></span></span>)</span><span class="params">(<span name="f">f: (<a href="File.html" class="extype" name="better.files.File">File</a>) ⇒ <span class="extype" name="better.files.File.usingTemporaryFile.U">U</span></span>)</span><span class="result">: <span class="extype" name="better.files.File.usingTemporaryFile.U">U</span></span>
-      </span>
-      
-      
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
