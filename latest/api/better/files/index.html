@@ -124,6 +124,12 @@
                           CloseableOps
                         </a>
                       </li><li class="current-entities indented2">
+                        <a class="object" href="Disposable$.html" title=""></a>
+                        <a class="trait" href="Disposable.html" title="A typeclass to denote a disposable resource"></a>
+                        <a href="Disposable.html" title="A typeclass to denote a disposable resource">
+                          Disposable
+                        </a>
+                      </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="object" href="Dsl$.html" title="Do file ops using a UNIX command line DSL
 "></a>
@@ -185,9 +191,21 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Implicits$IteratorExtensions.html" title=""></a>
+                        <a href="Implicits$IteratorExtensions.html" title="">
+                          IteratorExtensions
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Implicits$JStreamOps.html" title=""></a>
                         <a href="Implicits$JStreamOps.html" title="">
                           JStreamOps
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="ManagedResource.html" title=""></a>
+                        <a href="ManagedResource.html" title="">
+                          ManagedResource
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
@@ -229,9 +247,9 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
                         </a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="Scannable$.html" title=""></a>
-                        <a class="trait" href="Scannable.html" title="Implement this trait to make thing parseable
+                        <a class="trait" href="Scannable.html" title="Implement this trait to make thing parsable
 "></a>
-                        <a href="Scannable.html" title="Implement this trait to make thing parseable
+                        <a href="Scannable.html" title="Implement this trait to make thing parsable
 ">
                           Scannable
                         </a>
@@ -417,10 +435,28 @@ If error happens on any one while doing an operation, only the last error is rep
       </span>
       
       
-    </li><li name="better.files.File" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="FileextendsAutoCloseable"></a><a id="File:File"></a>
+    </li><li name="better.files.Disposable" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Disposable[-A]extendsAnyRef"></a><a id="Disposable[-A]:Disposable[A]"></a>
       <span class="permalink">
-      <a href="../../better/files/index.html#FileextendsAutoCloseable" title="Permalink">
+      <a href="../../better/files/index.html#Disposable[-A]extendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="A typeclass to denote a disposable resource" href="Disposable.html">
+              <span class="name">Disposable</span>
+            </a><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">A typeclass to denote a disposable resource</p>
+    </li><li name="better.files.File" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FileextendsAnyRef"></a><a id="File:File"></a>
+      <span class="permalink">
+      <a href="../../better/files/index.html#FileextendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -432,7 +468,7 @@ If error happens on any one while doing an operation, only the last error is rep
         <a title="Scala wrapper around java.nio.files.Path
 " href="File.html">
               <span class="name">File</span>
-            </a><span class="result"> extends <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
       <p class="shortcomment cmt">Scala wrapper around java.nio.files.Path
@@ -602,6 +638,24 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
         <a title="" href="Implicits$InputStreamOps.html">
               <span class="name">InputStreamOps</span>
             </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
+    </li><li name="better.files.Implicits.IteratorExtensions" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="IteratorExtensions[A]extendsAnyRef"></a><a id="IteratorExtensions[A]:IteratorExtensions[A]"></a>
+      <span class="permalink">
+      <a href="../../better/files/Implicits.html#IteratorExtensions[A]extendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Implicits$IteratorExtensions.html">
+              <span class="name">IteratorExtensions</span>
+            </a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
@@ -822,18 +876,20 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
     </li><li name="better.files.ManagedResource" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]"></a><a id="ManagedResource[A&lt;:Closeable]:ManagedResource[A]"></a>
+      <a id="ManagedResource[A]extendsAnyRef"></a><a id="ManagedResource[A]:ManagedResource[A]"></a>
       <span class="permalink">
-      <a href="../../better/files/index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" title="Permalink">
+      <a href="../../better/files/index.html#ManagedResource[A]extendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">type</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">ManagedResource</span><span class="tparams">[<span name="A">A &lt;: <a href="#Closeable=AnyRef{defclose():Unit}" class="extmbr" name="better.files.Closeable">Closeable</a></span>]</span><span class="result alias"> = <span class="extype" name="scala.collection.Traversable">Traversable</span>[<span class="extype" name="better.files.ManagedResource.A">A</span>]</span>
+        <a title="" href="ManagedResource.html">
+              <span class="name">ManagedResource</span>
+            </a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
       
@@ -849,13 +905,13 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Implement this trait to make thing parseable
+        <a title="Implement this trait to make thing parsable
 " href="Scannable.html">
               <span class="name">Scannable</span>
             </a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
-      <p class="shortcomment cmt">Implement this trait to make thing parseable
+      <p class="shortcomment cmt">Implement this trait to make thing parsable
 </p>
     </li><li name="better.files.Scanner" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="ScannerextendsIterator[String]withAutoCloseable"></a><a id="Scanner:Scanner"></a>
@@ -1011,6 +1067,24 @@ See: https://github.com/pathikrit/better-files/issues/107
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
+    </li><li name="better.files.Disposable" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Disposable"></a><a id="Disposable:Disposable"></a>
+      <span class="permalink">
+      <a href="../../better/files/index.html#Disposable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Disposable$.html">
+              <span class="name">Disposable</span>
+            </a>
+      </span>
+      
+      
     </li><li name="better.files.Dsl" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Dsl"></a><a id="Dsl:Dsl"></a>
       <span class="permalink">

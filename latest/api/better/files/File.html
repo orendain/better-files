@@ -126,6 +126,12 @@
                           CloseableOps
                         </a>
                       </li><li class="current-entities indented2">
+                        <a class="object" href="Disposable$.html" title=""></a>
+                        <a class="trait" href="Disposable.html" title="A typeclass to denote a disposable resource"></a>
+                        <a href="Disposable.html" title="A typeclass to denote a disposable resource">
+                          Disposable
+                        </a>
+                      </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="object" href="Dsl$.html" title="Do file ops using a UNIX command line DSL
 "></a>
@@ -187,9 +193,21 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Implicits$IteratorExtensions.html" title=""></a>
+                        <a href="Implicits$IteratorExtensions.html" title="">
+                          IteratorExtensions
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Implicits$JStreamOps.html" title=""></a>
                         <a href="Implicits$JStreamOps.html" title="">
                           JStreamOps
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="ManagedResource.html" title=""></a>
+                        <a href="ManagedResource.html" title="">
+                          ManagedResource
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
@@ -231,9 +249,9 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
                         </a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="Scannable$.html" title=""></a>
-                        <a class="trait" href="Scannable.html" title="Implement this trait to make thing parseable
+                        <a class="trait" href="Scannable.html" title="Implement this trait to make thing parsable
 "></a>
-                        <a href="Scannable.html" title="Implement this trait to make thing parseable
+                        <a href="Scannable.html" title="Implement this trait to make thing parsable
 ">
                           Scannable
                         </a>
@@ -330,7 +348,7 @@ If error happens on any one while doing an operation, only the last error is rep
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">File</span><span class="result"> extends <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>
+        <span class="name">File</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       </h4>
 
@@ -340,7 +358,7 @@ If error happens on any one while doing an operation, only the last error is rep
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -366,7 +384,7 @@ If error happens on any one while doing an operation, only the last error is rep
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="better.files.File"><span>File</span></li><li class="in" name="java.lang.AutoCloseable"><span>AutoCloseable</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="better.files.File"><span>File</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -598,7 +616,7 @@ If error happens on any one while doing an operation, only the last error is rep
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asynchronousFileChannel</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.nio.channels.AsynchronousFileChannel">AsynchronousFileChannel</span>]</span>
+        <span class="name">asynchronousFileChannel</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.nio.channels.AsynchronousFileChannel">AsynchronousFileChannel</span>]</span>
       </span>
       
       
@@ -630,7 +648,7 @@ If error happens on any one while doing an operation, only the last error is rep
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bufferedReader</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.BufferedReader">BufferedReader</span>]</span>
+        <span class="name">bufferedReader</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.BufferedReader">BufferedReader</span>]</span>
       </span>
       
       
@@ -646,7 +664,7 @@ If error happens on any one while doing an operation, only the last error is rep
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bufferedWriter</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>, <span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.BufferedWriter">BufferedWriter</span>]</span>
+        <span class="name">bufferedWriter</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>, <span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.BufferedWriter">BufferedWriter</span>]</span>
       </span>
       
       
@@ -790,22 +808,6 @@ If its a file, empty the contents
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="better.files.File#close" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="close():Unit"></a>
-      <span class="permalink">
-      <a href="../../better/files/File.html#close():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">close</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="better.files.File">File</a> → AutoCloseable</dd></dl></div>
     </li><li name="better.files.File#collectChildren" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="collectChildren(matchFilter:better.files.File=&gt;Boolean)(implicitvisitOptions:better.files.File.VisitOptions):better.files.Files"></a><a id="collectChildren((File)⇒Boolean)(VisitOptions):Files"></a>
       <span class="permalink">
@@ -1018,7 +1020,7 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">digestInputStream</span><span class="params">(<span name="digest">digest: <span class="extype" name="java.security.MessageDigest">MessageDigest</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.security.DigestInputStream">DigestInputStream</span>]</span>
+        <span class="name">digestInputStream</span><span class="params">(<span name="digest">digest: <span class="extype" name="java.security.MessageDigest">MessageDigest</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.security.DigestInputStream">DigestInputStream</span>]</span>
       </span>
       
       
@@ -1146,7 +1148,7 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fileChannel</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>, <span name="attributes">attributes: <a href="File$.html#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$.html">File.Attributes.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.nio.channels.FileChannel">FileChannel</span>]</span>
+        <span class="name">fileChannel</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>, <span name="attributes">attributes: <a href="File$.html#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$.html">File.Attributes.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.nio.channels.FileChannel">FileChannel</span>]</span>
       </span>
       
       
@@ -1162,7 +1164,7 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fileReader</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.FileReader">FileReader</span>]</span>
+        <span class="name">fileReader</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.FileReader">FileReader</span>]</span>
       </span>
       
       
@@ -1194,7 +1196,7 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fileWriter</span><span class="params">(<span name="append">append: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.FileWriter">FileWriter</span>]</span>
+        <span class="name">fileWriter</span><span class="params">(<span name="append">append: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.FileWriter">FileWriter</span>]</span>
       </span>
       
       
@@ -1332,7 +1334,7 @@ See: https://github.com/pathikrit/better-files/issues/89
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">inputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.InputStream">InputStream</span>]</span>
+        <span class="name">inputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.InputStream">InputStream</span>]</span>
       </span>
       
       
@@ -2361,7 +2363,7 @@ Certain files may not have a name e.g. root directory - returns empty string in 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">outputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.OutputStream">OutputStream</span>]</span>
+        <span class="name">outputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.OutputStream">OutputStream</span>]</span>
       </span>
       
       
@@ -2575,7 +2577,7 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">printWriter</span><span class="params">(<span name="autoFlush">autoFlush: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.PrintWriter">PrintWriter</span>]</span>
+        <span class="name">printWriter</span><span class="params">(<span name="autoFlush">autoFlush: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.PrintWriter">PrintWriter</span>]</span>
       </span>
       
       
@@ -2591,7 +2593,7 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">randomAccess</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a> = <span class="symbol"><span class="name"><a href="File$.html">File.RandomAccessMode.read</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span>]</span>
+        <span class="name">randomAccess</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a> = <span class="symbol"><span class="name"><a href="File$.html">File.RandomAccessMode.read</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span>]</span>
       </span>
       
       
@@ -2704,7 +2706,7 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">scanner</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a>]</span>
+        <span class="name">scanner</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a>]</span>
       </span>
       
       
@@ -2977,7 +2979,7 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toTemporary</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<a href="" class="extype" name="better.files.File">File</a>]</span>
+        <span class="name">toTemporary</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<a href="" class="extype" name="better.files.File">File</a>]</span>
       </span>
       
       <p class="shortcomment cmt">Java's temporary files/directories are not cleaned up by default.</p><div class="fullcomment"><div class="comment cmt"><p>Java's temporary files/directories are not cleaned up by default.
@@ -2985,12 +2987,12 @@ If we explicitly call <code>.deleteOnExit()</code>, it gets added to shutdown ha
 for long running systems with millions of temporary files as:
   a) it would slowdown shutdown and
   b) occupy unnecessary disk-space during app lifetime</p><p>This util auto-deletes the resource when done using the ManagedResource facility</p><p>Example usage:
-  File.managedTemporaryDirectory().foreach(tempDir =&gt; doSomething(tempDir)
+  File.temporaryDirectory().foreach(tempDir =&gt; doSomething(tempDir)
 </p></div></div>
     </li><li name="better.files.File#tokens" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="tokens(implicitconfig:better.files.Scanner.Config,implicitcharset:java.nio.charset.Charset):Traversable[String]"></a><a id="tokens(Config,Charset):Traversable[String]"></a>
+      <a id="tokens(implicitconfig:better.files.Scanner.Config,implicitcharset:java.nio.charset.Charset):Iterator[String]"></a><a id="tokens(Config,Charset):Iterator[String]"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#tokens(implicitconfig:better.files.Scanner.Config,implicitcharset:java.nio.charset.Charset):Traversable[String]" title="Permalink">
+      <a href="../../better/files/File.html#tokens(implicitconfig:better.files.Scanner.Config,implicitcharset:java.nio.charset.Charset):Iterator[String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -2999,7 +3001,7 @@ for long running systems with millions of temporary files as:
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tokens</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>, <span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Traversable">Traversable</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">tokens</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>, <span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
       
@@ -3233,7 +3235,7 @@ for long running systems with millions of temporary files as:
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">watchService</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.nio.file.WatchService">WatchService</span>]</span>
+        <span class="name">watchService</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.nio.file.WatchService">WatchService</span>]</span>
       </span>
       
       
@@ -3369,7 +3371,7 @@ Example usage: File(&quot;test.zip&quot;).zipIn(Seq(file&quot;hello.txt&quot;, f
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">zipInputStream</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.util.zip.ZipInputStream">ZipInputStream</span>]</span>
+        <span class="name">zipInputStream</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.util.zip.ZipInputStream">ZipInputStream</span>]</span>
       </span>
       
       
@@ -3385,7 +3387,7 @@ Example usage: File(&quot;test.zip&quot;).zipIn(Seq(file&quot;hello.txt&quot;, f
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">zipOutputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>, <span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.util.zip.ZipOutputStream">ZipOutputStream</span>]</span>
+        <span class="name">zipOutputStream</span><span class="params">(<span class="implicit">implicit </span><span name="openOptions">openOptions: <a href="File$.html#OpenOptions=Seq[java.nio.file.OpenOption]" class="extmbr" name="better.files.File.OpenOptions">OpenOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.OpenOptions.default</a></span></span></span>, <span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="File$.html">File.defaultCharset</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="java.util.zip.ZipOutputStream">ZipOutputStream</span>]</span>
       </span>
       
       
@@ -3417,9 +3419,7 @@ Example usage: File(&quot;test.zip&quot;).zipIn(Seq(file&quot;hello.txt&quot;, f
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="java.lang.AutoCloseable">
-              <h3>Inherited from <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></h3>
-            </div><div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

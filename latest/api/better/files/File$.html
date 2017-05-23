@@ -126,6 +126,12 @@
                           CloseableOps
                         </a>
                       </li><li class="current-entities indented2">
+                        <a class="object" href="Disposable$.html" title=""></a>
+                        <a class="trait" href="Disposable.html" title="A typeclass to denote a disposable resource"></a>
+                        <a href="Disposable.html" title="A typeclass to denote a disposable resource">
+                          Disposable
+                        </a>
+                      </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="object" href="Dsl$.html" title="Do file ops using a UNIX command line DSL
 "></a>
@@ -187,9 +193,21 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Implicits$IteratorExtensions.html" title=""></a>
+                        <a href="Implicits$IteratorExtensions.html" title="">
+                          IteratorExtensions
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="Implicits$JStreamOps.html" title=""></a>
                         <a href="Implicits$JStreamOps.html" title="">
                           JStreamOps
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="ManagedResource.html" title=""></a>
+                        <a href="ManagedResource.html" title="">
+                          ManagedResource
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
@@ -231,9 +249,9 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
                         </a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="Scannable$.html" title=""></a>
-                        <a class="trait" href="Scannable.html" title="Implement this trait to make thing parseable
+                        <a class="trait" href="Scannable.html" title="Implement this trait to make thing parsable
 "></a>
-                        <a href="Scannable.html" title="Implement this trait to make thing parseable
+                        <a href="Scannable.html" title="Implement this trait to make thing parsable
 ">
                           Scannable
                         </a>
@@ -1095,7 +1113,7 @@ See: http://stackoverflow.com/questions/676250/different-ways-of-loading-a-file-
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">temporaryDirectory</span><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="File.html" class="extype" name="better.files.File">File</a>] = <span class="symbol">None</span></span>, <span name="attributes">attributes: <a href="#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$$Attributes$.html">Attributes.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<a href="File.html" class="extype" name="better.files.File">File</a>]</span>
+        <span class="name">temporaryDirectory</span><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="File.html" class="extype" name="better.files.File">File</a>] = <span class="symbol">None</span></span>, <span name="attributes">attributes: <a href="#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$$Attributes$.html">Attributes.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<a href="File.html" class="extype" name="better.files.File">File</a>]</span>
       </span>
       
       
@@ -1111,7 +1129,7 @@ See: http://stackoverflow.com/questions/676250/different-ways-of-loading-a-file-
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">temporaryFile</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="suffix">suffix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="File.html" class="extype" name="better.files.File">File</a>] = <span class="symbol">None</span></span>, <span name="attributes">attributes: <a href="#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$$Attributes$.html">Attributes.default</a></span></span></span>)</span><span class="result">: <a href="index.html#ManagedResource[A&lt;:better.files.package.Closeable]=Traversable[A]" class="extmbr" name="better.files.ManagedResource">ManagedResource</a>[<a href="File.html" class="extype" name="better.files.File">File</a>]</span>
+        <span class="name">temporaryFile</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="prefix">prefix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="suffix">suffix: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="File.html" class="extype" name="better.files.File">File</a>] = <span class="symbol">None</span></span>, <span name="attributes">attributes: <a href="#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$$Attributes$.html">Attributes.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<a href="File.html" class="extype" name="better.files.File">File</a>]</span>
       </span>
       
       
