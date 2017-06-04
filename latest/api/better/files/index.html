@@ -439,22 +439,6 @@ https://github.com/apache/commons-io/blob/d357d9d563c4a34fa2ab3cdc68221c851a9de4
       </span>
       
       <p class="shortcomment cmt">Encoder that writes the BOM for this charset</p>
-    </li><li name="better.files.Closeable" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Closeable=AnyRef{defclose():Unit}"></a><a id="Closeable:Closeable"></a>
-      <span class="permalink">
-      <a href="../../better/files/index.html#Closeable=AnyRef{defclose():Unit}" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">Closeable</span><span class="result alias"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { def close(): Unit }</span>
-      </span>
-      
-      
     </li><li name="better.files.Disposable" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Disposable[-A]extendsAnyRef"></a><a id="Disposable[-A]:Disposable[A]"></a>
       <span class="permalink">
@@ -590,9 +574,9 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
     </li><li name="better.files.Implicits.CloseableOps" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="CloseableOps[A&lt;:better.files.Closeable]extendsAnyRef"></a><a id="CloseableOps[A&lt;:Closeable]:CloseableOps[A]"></a>
+      <a id="CloseableOps[A&lt;:AutoCloseable]extendsAnyRef"></a><a id="CloseableOps[A&lt;:AutoCloseable]:CloseableOps[A]"></a>
       <span class="permalink">
-      <a href="../../better/files/Implicits.html#CloseableOps[A&lt;:better.files.Closeable]extendsAnyRef" title="Permalink">
+      <a href="../../better/files/Implicits.html#CloseableOps[A&lt;:AutoCloseable]extendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -603,7 +587,7 @@ Instead of directly calling the constructor of this, call file.newWatcher to cre
       <span class="symbol">
         <a title="" href="Implicits$CloseableOps.html">
               <span class="name">CloseableOps</span>
-            </a><span class="tparams">[<span name="A">A &lt;: <a href="#Closeable=AnyRef{defclose():Unit}" class="extmbr" name="better.files.Closeable">Closeable</a></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+            </a><span class="tparams">[<span name="A">A &lt;: <span class="extype" name="java.lang.AutoCloseable">AutoCloseable</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Implicits.html" class="extype" name="better.files.Implicits">Implicits</a></dd></dl></div>
