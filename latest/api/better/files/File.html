@@ -287,6 +287,12 @@ See: http://codeforces.com/blog/entry/7018
                         </a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
+                        <a class="class" href="Implicits$SymbolExtensions.html" title=""></a>
+                        <a href="Implicits$SymbolExtensions.html" title="">
+                          SymbolExtensions
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
                         <a class="class" href="TeeOutputStream.html" title="Write to multiple outputstreams at once
 If error happens on any one while doing an operation, only the last error is reported"></a>
                         <a href="TeeOutputStream.html" title="Write to multiple outputstreams at once
@@ -1290,6 +1296,25 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
       </span>
       
       <p class="shortcomment cmt">Util to glob from this file's path</p><div class="fullcomment"><div class="comment cmt"><p>Util to glob from this file's path</p></div><dl class="paramcmts block"><dt class="param">includePath</dt><dd class="cmt"><p>If true, we don't need to set path glob patterns
+                   e.g. instead of *</p></dd></dl></div>
+    </li><li name="better.files.File#globRegex" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="globRegex(pattern:scala.util.matching.Regex,includePath:Boolean)(implicitvisitOptions:better.files.File.VisitOptions):better.files.Files"></a><a id="globRegex(Regex,Boolean)(VisitOptions):Files"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#globRegex(pattern:scala.util.matching.Regex,includePath:Boolean)(implicitvisitOptions:better.files.File.VisitOptions):better.files.Files" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">globRegex</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.util.matching.Regex">Regex</span></span>, <span name="includePath">includePath: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="visitOptions">visitOptions: <a href="File$.html#VisitOptions=Seq[java.nio.file.FileVisitOption]" class="extmbr" name="better.files.File.VisitOptions">VisitOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.VisitOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Util to match from this file's path using Regex
+</p><div class="fullcomment"><div class="comment cmt"><p>Util to match from this file's path using Regex
+</p></div><dl class="paramcmts block"><dt class="param">includePath</dt><dd class="cmt"><p>If true, we don't need to set path glob patterns
                    e.g. instead of *</p></dd></dl></div>
     </li><li name="better.files.File#group" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="group(implicitlinkOptions:better.files.File.LinkOptions):java.nio.file.attribute.GroupPrincipal"></a><a id="group(LinkOptions):GroupPrincipal"></a>
@@ -2650,25 +2675,6 @@ please use parentOption if you expect to handle roots
       
       <p class="shortcomment cmt">Deserialize a object using Java's default serialization from this file
 </p>
-    </li><li name="better.files.File#regex" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="regex(pattern:scala.util.matching.Regex,includePath:Boolean)(implicitsyntax:better.files.File.PathMatcherSyntax,implicitvisitOptions:better.files.File.VisitOptions):better.files.Files"></a><a id="regex(Regex,Boolean)(PathMatcherSyntax,VisitOptions):Files"></a>
-      <span class="permalink">
-      <a href="../../better/files/File.html#regex(pattern:scala.util.matching.Regex,includePath:Boolean)(implicitsyntax:better.files.File.PathMatcherSyntax,implicitvisitOptions:better.files.File.VisitOptions):better.files.Files" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">regex</span><span class="params">(<span name="pattern">pattern: <span class="extype" name="scala.util.matching.Regex">Regex</span></span>, <span name="includePath">includePath: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="syntax">syntax: <a href="File$$PathMatcherSyntax.html" class="extype" name="better.files.File.PathMatcherSyntax">PathMatcherSyntax</a> = <span class="symbol"><span class="name"><a href="File$.html">File.PathMatcherSyntax.regex</a></span></span></span>, <span name="visitOptions">visitOptions: <a href="File$.html#VisitOptions=Seq[java.nio.file.FileVisitOption]" class="extmbr" name="better.files.File.VisitOptions">VisitOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.VisitOptions.default</a></span></span></span>)</span><span class="result">: <a href="index.html#Files=Iterator[better.files.File]" class="extmbr" name="better.files.Files">Files</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Util to match from this file's path using Regex
-</p><div class="fullcomment"><div class="comment cmt"><p>Util to match from this file's path using Regex
-</p></div><dl class="paramcmts block"><dt class="param">includePath</dt><dd class="cmt"><p>If true, we don't need to set path glob patterns
-                   e.g. instead of *</p></dd></dl></div>
     </li><li name="better.files.File#register" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="register(service:java.nio.file.WatchService,events:better.files.File.Events):File.this.type"></a><a id="register(WatchService,Events):File.this.type"></a>
       <span class="permalink">
