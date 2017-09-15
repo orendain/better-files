@@ -935,6 +935,22 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
       </span>
       
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>destination</p></dd></dl></div>
+    </li><li name="better.files.File#copyToDirectory" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="copyToDirectory(directory:better.files.File)(implicitlinkOptions:better.files.File.LinkOptions,implicitcopyOptions:better.files.File.CopyOptions):better.files.File"></a><a id="copyToDirectory(File)(LinkOptions,CopyOptions):File"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#copyToDirectory(directory:better.files.File)(implicitlinkOptions:better.files.File.LinkOptions,implicitcopyOptions:better.files.File.CopyOptions):better.files.File" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">copyToDirectory</span><span class="params">(<span name="directory">directory: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="linkOptions">linkOptions: <a href="File$.html#LinkOptions=Seq[java.nio.file.LinkOption]" class="extmbr" name="better.files.File.LinkOptions">LinkOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.LinkOptions.default</a></span></span></span>, <span name="copyOptions">copyOptions: <a href="File$.html#CopyOptions=Seq[java.nio.file.CopyOption]" class="extmbr" name="better.files.File.CopyOptions">CopyOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.CopyOptions.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Copies this file into the given directory</p><div class="fullcomment"><div class="comment cmt"><p>Copies this file into the given directory</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the File referencing the new file created under destination</p></dd></dl></div>
     </li><li name="better.files.File#createChild" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createChild(child:String,asDirectory:Boolean,createParents:Boolean)(implicitattributes:better.files.File.Attributes,implicitlinkOptions:better.files.File.LinkOptions):better.files.File"></a><a id="createChild(String,Boolean,Boolean)(Attributes,LinkOptions):File"></a>
       <span class="permalink">
@@ -2019,6 +2035,22 @@ Note: Large files may cause an OutOfMemory in which case, use the streaming vers
       </span>
       
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>destination</p></dd></dl></div>
+    </li><li name="better.files.File#moveToDirectory" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="moveToDirectory(directory:better.files.File)(implicitlinkOptions:better.files.File.LinkOptions):better.files.File"></a><a id="moveToDirectory(File)(LinkOptions):File"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#moveToDirectory(directory:better.files.File)(implicitlinkOptions:better.files.File.LinkOptions):better.files.File" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">moveToDirectory</span><span class="params">(<span name="directory">directory: <a href="" class="extype" name="better.files.File">File</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="linkOptions">linkOptions: <a href="File$.html#LinkOptions=Seq[java.nio.file.LinkOption]" class="extmbr" name="better.files.File.LinkOptions">LinkOptions</a> = <span class="symbol"><span class="name"><a href="File$.html">File.LinkOptions.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Moves this file into the given directory</p><div class="fullcomment"><div class="comment cmt"><p>Moves this file into the given directory</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the File referencing the new file created under destination</p></dd></dl></div>
     </li><li name="better.files.File#name" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="name:String"></a>
       <span class="permalink">
