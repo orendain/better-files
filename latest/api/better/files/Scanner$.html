@@ -288,6 +288,12 @@ See: http://codeforces.com/blog/entry/7018
                           StringOps
                         </a>
                       </li><li class="current-entities indented2">
+                        <a class="object" href="StringSplitter$.html" title=""></a>
+                        <a class="trait" href="StringSplitter.html" title=""></a>
+                        <a href="StringSplitter.html" title="">
+                          StringSplitter
+                        </a>
+                      </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="Implicits$SymbolExtensions.html" title=""></a>
                         <a href="Implicits$SymbolExtensions.html" title="">
@@ -435,27 +441,7 @@ See: http://codeforces.com/blog/entry/7018
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="better.files.Scanner.Config" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ConfigextendsProductwithSerializable"></a><a id="Config:Config"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$.html#ConfigextendsProductwithSerializable" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">case class</span>
-      </span>
-      <span class="symbol">
-        <a title="Use this to configure your Scanner
-" href="Scanner$$Config.html">
-              <span class="name">Config</span>
-            </a><span class="params">(<span name="delimiter">delimiter: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="includeDelimiters">includeDelimiters: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Use this to configure your Scanner
-</p>
-    </li><li name="better.files.Scanner.Read" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+              <ol><li name="better.files.Scanner.Read" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Read[A]extendsAnyRef"></a><a id="Read[A]:Read[A]"></a>
       <span class="permalink">
       <a href="../../better/files/Scanner$.html#Read[A]extendsAnyRef" title="Permalink">
@@ -530,9 +516,9 @@ See: http://codeforces.com/blog/entry/7018
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.LineNumberReader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a><a id="apply(LineNumberReader)(Config):Scanner"></a>
+      <a id="apply(reader:java.io.LineNumberReader,splitter:better.files.StringSplitter):better.files.Scanner"></a><a id="apply(LineNumberReader,StringSplitter):Scanner"></a>
       <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(reader:java.io.LineNumberReader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink">
+      <a href="../../better/files/Scanner$.html#apply(reader:java.io.LineNumberReader,splitter:better.files.StringSplitter):better.files.Scanner" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -541,14 +527,14 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.LineNumberReader">LineNumberReader</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.LineNumberReader">LineNumberReader</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       
       
     </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(inputStream:java.io.InputStream)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a><a id="apply(InputStream)(Config):Scanner"></a>
+      <a id="apply(inputStream:java.io.InputStream,splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):better.files.Scanner"></a><a id="apply(InputStream,StringSplitter)(Charset):Scanner"></a>
       <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(inputStream:java.io.InputStream)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink">
+      <a href="../../better/files/Scanner$.html#apply(inputStream:java.io.InputStream,splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):better.files.Scanner" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -557,14 +543,14 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       
       
     </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.BufferedReader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a><a id="apply(BufferedReader)(Config):Scanner"></a>
+      <a id="apply(inputStream:java.io.InputStream)(implicitcharset:java.nio.charset.Charset):better.files.Scanner"></a><a id="apply(InputStream)(Charset):Scanner"></a>
       <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(reader:java.io.BufferedReader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink">
+      <a href="../../better/files/Scanner$.html#apply(inputStream:java.io.InputStream)(implicitcharset:java.nio.charset.Charset):better.files.Scanner" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -573,14 +559,14 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.BufferedReader">BufferedReader</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       
       
     </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.Reader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a><a id="apply(Reader)(Config):Scanner"></a>
+      <a id="apply(reader:java.io.Reader,splitter:better.files.StringSplitter):better.files.Scanner"></a><a id="apply(Reader,StringSplitter):Scanner"></a>
       <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(reader:java.io.Reader)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink">
+      <a href="../../better/files/Scanner$.html#apply(reader:java.io.Reader,splitter:better.files.StringSplitter):better.files.Scanner" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -589,14 +575,14 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.Reader">Reader</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.Reader">Reader</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       
       
     </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(str:String)(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a><a id="apply(String)(Config):Scanner"></a>
+      <a id="apply(reader:java.io.Reader):better.files.Scanner"></a><a id="apply(Reader):Scanner"></a>
       <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(str:String)(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink">
+      <a href="../../better/files/Scanner$.html#apply(reader:java.io.Reader):better.files.Scanner" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -605,7 +591,39 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.Reader">Reader</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+      </span>
+      
+      
+    </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply(str:String,splitter:better.files.StringSplitter):better.files.Scanner"></a><a id="apply(String,StringSplitter):Scanner"></a>
+      <span class="permalink">
+      <a href="../../better/files/Scanner$.html#apply(str:String,splitter:better.files.StringSplitter):better.files.Scanner" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+      </span>
+      
+      
+    </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply(str:String):better.files.Scanner"></a><a id="apply(String):Scanner"></a>
+      <span class="permalink">
+      <a href="../../better/files/Scanner$.html#apply(str:String):better.files.Scanner" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       
       
@@ -911,24 +929,6 @@ See: http://codeforces.com/blog/entry/7018
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="better.files.Scanner.Config" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Config"></a><a id="Config:Config"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$.html#Config" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a title="" href="Scanner$$Config$.html">
-              <span class="name">Config</span>
-            </a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
-      </span>
-      
-      
     </li><li name="better.files.Scanner.Read" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Read"></a><a id="Read:Read"></a>
       <span class="permalink">

@@ -288,6 +288,12 @@ See: http://codeforces.com/blog/entry/7018
                           StringOps
                         </a>
                       </li><li class="current-entities indented2">
+                        <a class="object" href="StringSplitter$.html" title=""></a>
+                        <a class="trait" href="StringSplitter.html" title=""></a>
+                        <a href="StringSplitter.html" title="">
+                          StringSplitter
+                        </a>
+                      </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="Implicits$SymbolExtensions.html" title=""></a>
                         <a href="Implicits$SymbolExtensions.html" title="">
@@ -984,7 +990,8 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
         <span class="name">createDirectories</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="attributes">attributes: <a href="File$.html#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$.html">File.Attributes.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
       </span>
       
-      
+      <p class="shortcomment cmt">Create this directory and all its parents
+</p>
     </li><li name="better.files.File#createDirectory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createDirectory()(implicitattributes:better.files.File.Attributes):File.this.type"></a><a id="createDirectory()(Attributes):File.this.type"></a>
       <span class="permalink">
@@ -1000,7 +1007,25 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
         <span class="name">createDirectory</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="attributes">attributes: <a href="File$.html#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$.html">File.Attributes.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
       </span>
       
+      <p class="shortcomment cmt">Create this directory
+</p>
+    </li><li name="better.files.File#createFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createFile()(implicitattributes:better.files.File.Attributes):File.this.type"></a><a id="createFile()(Attributes):File.this.type"></a>
+      <span class="permalink">
+      <a href="../../better/files/File.html#createFile()(implicitattributes:better.files.File.Attributes):File.this.type" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createFile</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="attributes">attributes: <a href="File$.html#Attributes=Seq[java.nio.file.attribute.FileAttribute[_]]" class="extmbr" name="better.files.File.Attributes">Attributes</a> = <span class="symbol"><span class="name"><a href="File$.html">File.Attributes.default</a></span></span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.File">File</a>.this.type</span>
+      </span>
       
+      <p class="shortcomment cmt">Create this file
+</p>
     </li><li name="better.files.File#createIfNotExists" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="createIfNotExists(asDirectory:Boolean,createParents:Boolean)(implicitattributes:better.files.File.Attributes,implicitlinkOptions:better.files.File.LinkOptions):File.this.type"></a><a id="createIfNotExists(Boolean,Boolean)(Attributes,LinkOptions):File.this.type"></a>
       <span class="permalink">
@@ -1561,7 +1586,7 @@ See: https://github.com/pathikrit/better-files/issues/89
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="better.files.File#isLocked" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="better.files.File#isLocked" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isLocked(mode:better.files.File.RandomAccessMode,position:Long,size:Long,isShared:Boolean):Boolean"></a><a id="isLocked(RandomAccessMode,Long,Long,Boolean):Boolean"></a>
       <span class="permalink">
       <a href="../../better/files/File.html#isLocked(mode:better.files.File.RandomAccessMode,position:Long,size:Long,isShared:Boolean):Boolean" title="Permalink">
@@ -1576,7 +1601,10 @@ See: https://github.com/pathikrit/better-files/issues/89
         <span class="name">isLocked</span><span class="params">(<span name="mode">mode: <a href="File$$RandomAccessMode.html" class="extype" name="better.files.File.RandomAccessMode">RandomAccessMode</a></span>, <span name="position">position: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">0L</span></span>, <span name="size">size: <span class="extype" name="scala.Long">Long</span> = <span class="symbol">Long.MaxValue</span></span>, <span name="isShared">isShared: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Check if a file is locked.</p><div class="fullcomment"><div class="comment cmt"><p>Check if a file is locked.</p><p>Windows throws a <code>FileNotFoundException</code> if the file is locked, so we check if the file exists.
+We use the <code>exists</code> and <code>notExists</code> method to check if a file exists, because it's not guaranteed
+that <code>exists</code> return true even if a file exists.
+</p></div><dl class="paramcmts block"><dt class="param">mode</dt><dd class="cmt"><p>The random access mode.</p></dd><dt class="param">position</dt><dd class="cmt"><p>The position at which the locked region is to start; must be non-negative.</p></dd><dt class="param">size</dt><dd class="cmt"><p>The size of the locked region; must be non-negative, and the sum position + size must be non-negative.</p></dd><dt class="param">isShared</dt><dd class="cmt"><p>true to request a shared lock, false to request an exclusive lock.</p></dd><dt>returns</dt><dd class="cmt"><p>True if the file is locked, false otherwise.</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>https://stackoverflow.com/questions/30520179/why-does-file-exists-return-true-even-though-files-exists-in-the-nio-files</p></span><span class="cmt"><p>https://docs.oracle.com/javase/tutorial/essential/io/check.html</p></span></dd></dl></div>
     </li><li name="better.files.File#isOthersExecutable" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isOthersExecutable(implicitlinkOptions:better.files.File.LinkOptions):Boolean"></a><a id="isOthersExecutable(LinkOptions):Boolean"></a>
       <span class="permalink">
@@ -2317,9 +2345,9 @@ Certain files may not have a name e.g. root directory - returns empty string in 
       
       
     </li><li name="better.files.File#newScanner" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="newScanner(implicitconfig:better.files.Scanner.Config):better.files.Scanner"></a><a id="newScanner(Config):Scanner"></a>
+      <a id="newScanner(splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):better.files.Scanner"></a><a id="newScanner(StringSplitter)(Charset):Scanner"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#newScanner(implicitconfig:better.files.Scanner.Config):better.files.Scanner" title="Permalink">
+      <a href="../../better/files/File.html#newScanner(splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):better.files.Scanner" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -2328,7 +2356,7 @@ Certain files may not have a name e.g. root directory - returns empty string in 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">newScanner</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">newScanner</span><span class="params">(<span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a> = <span class="symbol"><span class="name"><a href="StringSplitter$.html">StringSplitter.default</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       
       
@@ -2790,9 +2818,9 @@ please use parentOption if you expect to handle roots
       
       
     </li><li name="better.files.File#scanner" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="scanner(implicitconfig:better.files.Scanner.Config):better.files.ManagedResource[better.files.Scanner]"></a><a id="scanner(Config):ManagedResource[Scanner]"></a>
+      <a id="scanner(splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):better.files.ManagedResource[better.files.Scanner]"></a><a id="scanner(StringSplitter)(Charset):ManagedResource[Scanner]"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#scanner(implicitconfig:better.files.Scanner.Config):better.files.ManagedResource[better.files.Scanner]" title="Permalink">
+      <a href="../../better/files/File.html#scanner(splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):better.files.ManagedResource[better.files.Scanner]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -2801,7 +2829,7 @@ please use parentOption if you expect to handle roots
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">scanner</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a>]</span>
+        <span class="name">scanner</span><span class="params">(<span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a> = <span class="symbol"><span class="name"><a href="StringSplitter$.html">StringSplitter.default</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result">: <a href="ManagedResource.html" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a>]</span>
       </span>
       
       
@@ -3085,9 +3113,9 @@ for long running systems with millions of temporary files as:
   File.temporaryDirectory().foreach(tempDir =&gt; doSomething(tempDir)
 </p></div></div>
     </li><li name="better.files.File#tokens" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="tokens(implicitconfig:better.files.Scanner.Config,implicitcharset:java.nio.charset.Charset):Iterator[String]"></a><a id="tokens(Config,Charset):Iterator[String]"></a>
+      <a id="tokens(splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):Iterator[String]"></a><a id="tokens(StringSplitter)(Charset):Iterator[String]"></a>
       <span class="permalink">
-      <a href="../../better/files/File.html#tokens(implicitconfig:better.files.Scanner.Config,implicitcharset:java.nio.charset.Charset):Iterator[String]" title="Permalink">
+      <a href="../../better/files/File.html#tokens(splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):Iterator[String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -3096,7 +3124,7 @@ for long running systems with millions of temporary files as:
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tokens</span><span class="params">(<span class="implicit">implicit </span><span name="config">config: <a href="Scanner$$Config.html" class="extype" name="better.files.Scanner.Config">Config</a> = <span class="symbol"><span class="name"><a href="Scanner$.html">Scanner.Config.default</a></span></span></span>, <span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">tokens</span><span class="params">(<span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a> = <span class="symbol"><span class="name"><a href="StringSplitter$.html">StringSplitter.default</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
       
