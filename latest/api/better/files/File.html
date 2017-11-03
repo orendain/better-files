@@ -991,6 +991,8 @@ Note: This is lazy (returns an Iterator) and won't evaluate till we reify the it
       </span>
       
       <p class="shortcomment cmt">Create this directory and all its parents
+Unlike the JDK, this by default sanely handles the JDK-8130464 bug
+If you want default Java behaviour, use File.LinkOptions.noFollow
 </p>
     </li><li name="better.files.File#createDirectory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="createDirectory()(implicitattributes:better.files.File.Attributes):File.this.type"></a><a id="createDirectory()(Attributes):File.this.type"></a>
