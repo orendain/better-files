@@ -441,7 +441,9 @@
         <span class="name">asObjectInputStreamUsingClassLoader</span><span class="params">(<span name="classLoader">classLoader: <span class="extype" name="java.lang.ClassLoader">ClassLoader</span> = <span class="symbol">getClass.getClassLoader</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.ObjectInputStream">ObjectInputStream</span></span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">bufferSize</dt><dd class="cmt"><p>If bufferSize is set to less than or equal to 0, we don't buffer</p></dd><dt>returns</dt><dd class="cmt"><p>A special ObjectInputStream that loads a class based on a specified ClassLoader rather than the default
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">bufferSize</dt><dd class="cmt"><p>If bufferSize is set to less than or equal to 0, we don't buffer
+Code adapted from:
+https://github.com/apache/commons-io/blob/master/src/main/java/org/apache/commons/io/input/ClassLoaderObjectInputStream.java</p></dd><dt>returns</dt><dd class="cmt"><p>A special ObjectInputStream that loads a class based on a specified ClassLoader rather than the default
 This is useful in dynamic container environments.</p></dd></dl></div>
     </li><li name="better.files.Implicits.InputStreamOps#asString" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="asString(closeStream:Boolean,bufferSize:Int)(implicitcharset:java.nio.charset.Charset):String"></a><a id="asString(Boolean,Int)(Charset):String"></a>
