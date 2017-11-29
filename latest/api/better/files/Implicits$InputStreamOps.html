@@ -411,9 +411,9 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="better.files.Implicits.InputStreamOps#asObjectInputStream" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="asObjectInputStream:java.io.ObjectInputStream"></a><a id="asObjectInputStream:ObjectInputStream"></a>
+      <a id="asObjectInputStream(bufferSize:Int):java.io.ObjectInputStream"></a><a id="asObjectInputStream(Int):ObjectInputStream"></a>
       <span class="permalink">
-      <a href="../../better/files/Implicits$InputStreamOps.html#asObjectInputStream:java.io.ObjectInputStream" title="Permalink">
+      <a href="../../better/files/Implicits$InputStreamOps.html#asObjectInputStream(bufferSize:Int):java.io.ObjectInputStream" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -422,10 +422,27 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asObjectInputStream</span><span class="result">: <span class="extype" name="java.io.ObjectInputStream">ObjectInputStream</span></span>
+        <span class="name">asObjectInputStream</span><span class="params">(<span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.ObjectInputStream">ObjectInputStream</span></span>
       </span>
       
+      <p class="shortcomment cmt">If bufferSize is set to less than or equal to 0, we don't buffer</p>
+    </li><li name="better.files.Implicits.InputStreamOps#asObjectInputStreamUsingClassLoader" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asObjectInputStreamUsingClassLoader(classLoader:ClassLoader,bufferSize:Int):java.io.ObjectInputStream"></a><a id="asObjectInputStreamUsingClassLoader(ClassLoader,Int):ObjectInputStream"></a>
+      <span class="permalink">
+      <a href="../../better/files/Implicits$InputStreamOps.html#asObjectInputStreamUsingClassLoader(classLoader:ClassLoader,bufferSize:Int):java.io.ObjectInputStream" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asObjectInputStreamUsingClassLoader</span><span class="params">(<span name="classLoader">classLoader: <span class="extype" name="java.lang.ClassLoader">ClassLoader</span> = <span class="symbol">getClass.getClassLoader</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.ObjectInputStream">ObjectInputStream</span></span>
+      </span>
       
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">bufferSize</dt><dd class="cmt"><p>If bufferSize is set to less than or equal to 0, we don't buffer</p></dd><dt>returns</dt><dd class="cmt"><p>A special ObjectInputStream that loads a class based on a specified ClassLoader rather than the default
+This is useful in dynamic container environments.</p></dd></dl></div>
     </li><li name="better.files.Implicits.InputStreamOps#asString" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="asString(closeStream:Boolean,bufferSize:Int)(implicitcharset:java.nio.charset.Charset):String"></a><a id="asString(Boolean,Int)(Charset):String"></a>
       <span class="permalink">

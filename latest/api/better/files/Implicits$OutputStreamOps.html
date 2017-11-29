@@ -411,9 +411,9 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="better.files.Implicits.OutputStreamOps#asObjectOutputStream" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="asObjectOutputStream:java.io.ObjectOutputStream"></a><a id="asObjectOutputStream:ObjectOutputStream"></a>
+      <a id="asObjectOutputStream(bufferSize:Int):java.io.ObjectOutputStream"></a><a id="asObjectOutputStream(Int):ObjectOutputStream"></a>
       <span class="permalink">
-      <a href="../../better/files/Implicits$OutputStreamOps.html#asObjectOutputStream:java.io.ObjectOutputStream" title="Permalink">
+      <a href="../../better/files/Implicits$OutputStreamOps.html#asObjectOutputStream(bufferSize:Int):java.io.ObjectOutputStream" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -422,7 +422,23 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asObjectOutputStream</span><span class="result">: <span class="extype" name="java.io.ObjectOutputStream">ObjectOutputStream</span></span>
+        <span class="name">asObjectOutputStream</span><span class="params">(<span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.ObjectOutputStream">ObjectOutputStream</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">If bufferSize is set to less than or equal to 0, we don't buffer</p>
+    </li><li name="better.files.Implicits.OutputStreamOps#buffered" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="buffered(bufferSize:Int):java.io.BufferedOutputStream"></a><a id="buffered(Int):BufferedOutputStream"></a>
+      <span class="permalink">
+      <a href="../../better/files/Implicits$OutputStreamOps.html#buffered(bufferSize:Int):java.io.BufferedOutputStream" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">buffered</span><span class="params">(<span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="java.io.BufferedOutputStream">BufferedOutputStream</span></span>
       </span>
       
       
