@@ -412,7 +412,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asGzipInputStream</span><span class="params">(<span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.util.zip.GZIPInputStream">GZIPInputStream</span></span>
+        <span class="name">asGzipInputStream</span><span class="params">(<span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultBufferSize:Int">DefaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.util.zip.GZIPInputStream">GZIPInputStream</span></span>
       </span>
       
       
@@ -444,7 +444,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asObjectInputStream</span><span class="params">(<span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.ObjectInputStream">ObjectInputStream</span></span>
+        <span class="name">asObjectInputStream</span><span class="params">(<span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultBufferSize:Int">DefaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.ObjectInputStream">ObjectInputStream</span></span>
       </span>
       
       <p class="shortcomment cmt">If bufferSize is set to less than or equal to 0, we don't buffer</p>
@@ -460,7 +460,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asObjectInputStreamUsingClassLoader</span><span class="params">(<span name="classLoader">classLoader: <span class="extype" name="java.lang.ClassLoader">ClassLoader</span> = <span class="symbol">getClass.getClassLoader</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.ObjectInputStream">ObjectInputStream</span></span>
+        <span class="name">asObjectInputStreamUsingClassLoader</span><span class="params">(<span name="classLoader">classLoader: <span class="extype" name="java.lang.ClassLoader">ClassLoader</span> = <span class="symbol">getClass.getClassLoader</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultBufferSize:Int">DefaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.ObjectInputStream">ObjectInputStream</span></span>
       </span>
       
       <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">bufferSize</dt><dd class="cmt"><p>If bufferSize is set to less than or equal to 0, we don't buffer
@@ -479,7 +479,7 @@ This is useful in dynamic container environments.</p></dd></dl></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">asString</span><span class="params">(<span name="closeStream">closeStream: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">asString</span><span class="params">(<span name="closeStream">closeStream: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultBufferSize:Int">DefaultBufferSize</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultCharset:java.nio.charset.Charset">DefaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
       
@@ -667,7 +667,7 @@ This is useful in dynamic container environments.</p></dd></dl></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lines</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+        <span class="name">lines</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultCharset:java.nio.charset.Charset">DefaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
       
@@ -752,7 +752,7 @@ This is useful in dynamic container environments.</p></dd></dl></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">pipeTo</span><span class="params">(<span name="out">out: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#defaultBufferSize:Int">defaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="better.files.Implicits.InputStreamOps.pipeTo.out">out</span>.type</span>
+        <span class="name">pipeTo</span><span class="params">(<span name="out">out: <span class="extype" name="java.io.OutputStream">OutputStream</span></span>, <span name="bufferSize">bufferSize: <span class="extype" name="scala.Int">Int</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultBufferSize:Int">DefaultBufferSize</a></span></span></span>)</span><span class="result">: <span class="extype" name="better.files.Implicits.InputStreamOps.pipeTo.out">out</span>.type</span>
       </span>
       
       
@@ -768,7 +768,7 @@ This is useful in dynamic container environments.</p></dd></dl></div>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">reader</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#defaultCharset:java.nio.charset.Charset">defaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.InputStreamReader">InputStreamReader</span></span>
+        <span class="name">reader</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultCharset:java.nio.charset.Charset">DefaultCharset</a></span></span></span>)</span><span class="result">: <span class="extype" name="java.io.InputStreamReader">InputStreamReader</span></span>
       </span>
       
       
