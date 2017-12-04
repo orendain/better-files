@@ -158,7 +158,7 @@
                         <a class="class" href="Implicits$JStreamOps.html" title=""></a>
                         <a href="Implicits$JStreamOps.html" title="">JStreamOps</a>
                       </li><li class="current-entities indented2">
-                        <span class="separator"></span>
+                        <a class="object" href="ManagedResource$.html" title=""></a>
                         <a class="class" href="ManagedResource.html" title=""></a>
                         <a href="ManagedResource.html" title="">ManagedResource</a>
                       </li><li class="current-entities indented2">
@@ -249,6 +249,14 @@
                         <span class="separator"></span>
                         <a class="class" href="Implicits$ZipOutputStreamOps.html" title=""></a>
                         <a href="Implicits$ZipOutputStreamOps.html" title="">ZipOutputStreamOps</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="ManagedResource$$FlatMapImplicits$managedResourceFlatMap$.html" title="Compose this managed resource with another managed resource closing the outer one after the inner one"></a>
+                        <a href="ManagedResource$$FlatMapImplicits$managedResourceFlatMap$.html" title="Compose this managed resource with another managed resource closing the outer one after the inner one">managedResourceFlatMap</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="ManagedResource$$FlatMapImplicits$traversableFlatMap$.html" title="Use the current managed resource as a generator needed to create another sequence"></a>
+                        <a href="ManagedResource$$FlatMapImplicits$traversableFlatMap$.html" title="Use the current managed resource as a generator needed to create another sequence">traversableFlatMap</a>
                       </li>
               </ul>
             </div>
@@ -385,9 +393,9 @@
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.Disposable#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply[A](disposeMethod:A=&gt;Any):better.files.Disposable[A]"></a><a id="apply[A]((A)⇒Any):Disposable[A]"></a>
+      <a id="apply[A](disposeMethod:=&gt;Unit):better.files.Disposable[A]"></a><a id="apply[A](⇒Unit):Disposable[A]"></a>
       <span class="permalink">
-      <a href="../../better/files/Disposable$.html#apply[A](disposeMethod:A=&gt;Any):better.files.Disposable[A]" title="Permalink">
+      <a href="../../better/files/Disposable$.html#apply[A](disposeMethod:=&gt;Unit):better.files.Disposable[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -396,7 +404,23 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="disposeMethod">disposeMethod: (<span class="extype" name="better.files.Disposable.apply.A">A</span>) ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="Disposable.html" class="extype" name="better.files.Disposable">Disposable</a>[<span class="extype" name="better.files.Disposable.apply.A">A</span>]</span>
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="disposeMethod">disposeMethod: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Disposable.html" class="extype" name="better.files.Disposable">Disposable</a>[<span class="extype" name="better.files.Disposable.apply.A">A</span>]</span>
+      </span>
+      
+      
+    </li><li name="better.files.Disposable#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply[A](disposeFunction:A=&gt;Any):better.files.Disposable[A]"></a><a id="apply[A]((A)⇒Any):Disposable[A]"></a>
+      <span class="permalink">
+      <a href="../../better/files/Disposable$.html#apply[A](disposeFunction:A=&gt;Any):better.files.Disposable[A]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="disposeFunction">disposeFunction: (<span class="extype" name="better.files.Disposable.apply.A">A</span>) ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <a href="Disposable.html" class="extype" name="better.files.Disposable">Disposable</a>[<span class="extype" name="better.files.Disposable.apply.A">A</span>]</span>
       </span>
       
       

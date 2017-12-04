@@ -158,7 +158,7 @@
                         <a class="class" href="Implicits$JStreamOps.html" title=""></a>
                         <a href="Implicits$JStreamOps.html" title="">JStreamOps</a>
                       </li><li class="current-entities indented2">
-                        <span class="separator"></span>
+                        <a class="object" href="ManagedResource$.html" title=""></a>
                         <a class="class" href="" title=""></a>
                         <a href="" title="">ManagedResource</a>
                       </li><li class="current-entities indented2">
@@ -249,6 +249,14 @@
                         <span class="separator"></span>
                         <a class="class" href="Implicits$ZipOutputStreamOps.html" title=""></a>
                         <a href="Implicits$ZipOutputStreamOps.html" title="">ZipOutputStreamOps</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="ManagedResource$$FlatMapImplicits$managedResourceFlatMap$.html" title="Compose this managed resource with another managed resource closing the outer one after the inner one"></a>
+                        <a href="ManagedResource$$FlatMapImplicits$managedResourceFlatMap$.html" title="Compose this managed resource with another managed resource closing the outer one after the inner one">managedResourceFlatMap</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="ManagedResource$$FlatMapImplicits$traversableFlatMap$.html" title="Use the current managed resource as a generator needed to create another sequence"></a>
+                        <a href="ManagedResource$$FlatMapImplicits$traversableFlatMap$.html" title="Use the current managed resource as a generator needed to create another sequence">traversableFlatMap</a>
                       </li>
               </ul>
             </div>
@@ -256,14 +264,16 @@
           <div id="content">
             <body class="class type">
       <div id="definition">
-        <div class="big-circle class">c</div>
+        <a href="ManagedResource$.html" title="See companion object"><div class="big-circle class-companion-object">c</div></a>
         <p id="owner"><a href="../index.html" class="extype" name="better">better</a>.<a href="index.html" class="extype" name="better.files">files</a></p>
-        <h1>ManagedResource<span class="permalink">
+        <h1><a href="ManagedResource$.html" title="See companion object">ManagedResource</a><span class="permalink">
       <a href="../../better/files/ManagedResource.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
-        <h3><span class="morelinks"></span></h3>
+        <h3><span class="morelinks"><div>
+            Companion <a href="ManagedResource$.html" title="See companion object">object ManagedResource</a>
+          </div></span></h3>
       </div>
 
       <h4 id="signature" class="signature">
@@ -401,6 +411,25 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="better.files.ManagedResource#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply[B](f:A=&gt;B):B"></a><a id="apply[B]((A)⇒B):B"></a>
+      <span class="permalink">
+      <a href="../../better/files/ManagedResource.html#apply[B](f:A=&gt;B):B" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="better.files.ManagedResource.A">A</span>) ⇒ <span class="extype" name="better.files.ManagedResource.apply.B">B</span></span>)</span><span class="result">: <span class="extype" name="better.files.ManagedResource.apply.B">B</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Apply f to the resource and return it after closing the resource
+If you don't wish to close the resource (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>Apply f to the resource and return it after closing the resource
+If you don't wish to close the resource (e.g. if you are creating an iterator on file contents), use flatMap instead
+</p></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -495,10 +524,10 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="better.files.ManagedResource#flatMap" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="flatMap[B](f:A=&gt;Iterator[B]):Iterator[B]"></a><a id="flatMap[B]((A)⇒Iterator[B]):Iterator[B]"></a>
+    </li><li name="better.files.ManagedResource#flatMap" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="flatMap[B,F[_]](f:A=&gt;F[B])(implicitfv:better.files.ManagedResource.FlatMap[F]):fv.Output[B]"></a><a id="flatMap[B,F[_]]((A)⇒F[B])(FlatMap[F]):Output[B]"></a>
       <span class="permalink">
-      <a href="../../better/files/ManagedResource.html#flatMap[B](f:A=&gt;Iterator[B]):Iterator[B]" title="Permalink">
+      <a href="../../better/files/ManagedResource.html#flatMap[B,F[_]](f:A=&gt;F[B])(implicitfv:better.files.ManagedResource.FlatMap[F]):fv.Output[B]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -507,12 +536,11 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="better.files.ManagedResource.A">A</span>) ⇒ <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="better.files.ManagedResource.flatMap.B">B</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Iterator">Iterator</span>[<span class="extype" name="better.files.ManagedResource.flatMap.B">B</span>]</span>
+        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>, <span name="F">F<span class="tparams">[<span name="_">_</span>]</span></span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="better.files.ManagedResource.A">A</span>) ⇒ <span class="extype" name="better.files.ManagedResource.flatMap.F">F</span>[<span class="extype" name="better.files.ManagedResource.flatMap.B">B</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="fv">fv: <a href="ManagedResource$$FlatMap.html" class="extype" name="better.files.ManagedResource.FlatMap">FlatMap</a>[<span class="extype" name="better.files.ManagedResource.flatMap.F">F</span>]</span>)</span><span class="result">: <a href="ManagedResource$$FlatMap.html#Output[_]" class="extmbr" name="better.files.ManagedResource.FlatMap.Output">Output</a>[<span class="extype" name="better.files.ManagedResource.flatMap.B">B</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">This handles lazy operations (e.g.</p><div class="fullcomment"><div class="comment cmt"><p>This handles lazy operations (e.g. Iterators)
-for which resource needs to be disposed only after iteration is done
-</p></div></div>
+      <p class="shortcomment cmt">This keeps the resource open during the context of this flatMap and closes when done
+</p>
     </li><li name="better.files.ManagedResource#foreach" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="foreach[U](f:A=&gt;U):Unit"></a><a id="foreach[U]((A)⇒U):Unit"></a>
       <span class="permalink">
@@ -528,7 +556,25 @@ for which resource needs to be disposed only after iteration is done
         <span class="name">foreach</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="better.files.ManagedResource.A">A</span>) ⇒ <span class="extype" name="better.files.ManagedResource.foreach.U">U</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       
+      <p class="shortcomment cmt">This will immediately apply f on the resource and close the resource
+</p>
+    </li><li name="better.files.ManagedResource#get" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="get():A"></a>
+      <span class="permalink">
+      <a href="../../better/files/ManagedResource.html#get():A" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="params">()</span><span class="result">: <span class="extype" name="better.files.ManagedResource.A">A</span></span>
+      </span>
       
+      <p class="shortcomment cmt">Dispose this resource and return it
+Note: If you are using map followed by get, consider using apply instead</p>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -584,9 +630,9 @@ for which resource needs to be disposed only after iteration is done
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="better.files.ManagedResource#map" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="map[B](f:A=&gt;B):B"></a><a id="map[B]((A)⇒B):B"></a>
+      <a id="map[B](f:A=&gt;B):better.files.ManagedResource[B]"></a><a id="map[B]((A)⇒B):ManagedResource[B]"></a>
       <span class="permalink">
-      <a href="../../better/files/ManagedResource.html#map[B](f:A=&gt;B):B" title="Permalink">
+      <a href="../../better/files/ManagedResource.html#map[B](f:A=&gt;B):better.files.ManagedResource[B]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -595,10 +641,11 @@ for which resource needs to be disposed only after iteration is done
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="better.files.ManagedResource.A">A</span>) ⇒ <span class="extype" name="better.files.ManagedResource.map.B">B</span></span>)</span><span class="result">: <span class="extype" name="better.files.ManagedResource.map.B">B</span></span>
+        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="better.files.ManagedResource.A">A</span>) ⇒ <span class="extype" name="better.files.ManagedResource.map.B">B</span></span>)</span><span class="result">: <a href="" class="extype" name="better.files.ManagedResource">ManagedResource</a>[<span class="extype" name="better.files.ManagedResource.map.B">B</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">This will apply f on the resource while it is open
+</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
