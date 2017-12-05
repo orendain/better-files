@@ -251,12 +251,12 @@
                         <a href="Implicits$ZipOutputStreamOps.html" title="">ZipOutputStreamOps</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="ManagedResource$$FlatMapImplicits$managedResourceFlatMap$.html" title="Compose this managed resource with another managed resource closing the outer one after the inner one"></a>
-                        <a href="ManagedResource$$FlatMapImplicits$managedResourceFlatMap$.html" title="Compose this managed resource with another managed resource closing the outer one after the inner one">managedResourceFlatMap</a>
+                        <a class="object" href="ManagedResource$$FlatMap$$Implicits$managedResourceFlatMap$.html" title="Compose this managed resource with another managed resource closing the outer one after the inner one"></a>
+                        <a href="ManagedResource$$FlatMap$$Implicits$managedResourceFlatMap$.html" title="Compose this managed resource with another managed resource closing the outer one after the inner one">managedResourceFlatMap</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="ManagedResource$$FlatMapImplicits$traversableFlatMap$.html" title="Use the current managed resource as a generator needed to create another sequence"></a>
-                        <a href="ManagedResource$$FlatMapImplicits$traversableFlatMap$.html" title="Use the current managed resource as a generator needed to create another sequence">traversableFlatMap</a>
+                        <a class="object" href="ManagedResource$$FlatMap$$Implicits$traversableFlatMap$.html" title="Use the current managed resource as a generator needed to create another sequence"></a>
+                        <a href="ManagedResource$$FlatMap$$Implicits$traversableFlatMap$.html" title="Use the current managed resource as a generator needed to create another sequence">traversableFlatMap</a>
                       </li>
               </ul>
             </div>
@@ -357,6 +357,22 @@ See: http://codeforces.com/blog/entry/7018
       </span>
       
       
+    </li><li name="better.files.Scanner.Source" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Source[A]extendsAnyRef"></a><a id="Source[A]:Source[A]"></a>
+      <span class="permalink">
+      <a href="../../better/files/Scanner$.html#Source[A]extendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Scanner$$Source.html"><span class="name">Source</span></a><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      
     </li></ol>
             </div>
 
@@ -414,9 +430,9 @@ See: http://codeforces.com/blog/entry/7018
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.LineNumberReader,splitter:better.files.StringSplitter):better.files.Scanner"></a><a id="apply(LineNumberReader,StringSplitter):Scanner"></a>
+      <a id="apply[A](a:A,splitter:better.files.StringSplitter)(implicitevidence$1:better.files.Scanner.Source[A]):better.files.Scanner"></a><a id="apply[A](A,StringSplitter)(Source[A]):Scanner"></a>
       <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(reader:java.io.LineNumberReader,splitter:better.files.StringSplitter):better.files.Scanner" title="Permalink">
+      <a href="../../better/files/Scanner$.html#apply[A](a:A,splitter:better.files.StringSplitter)(implicitevidence$1:better.files.Scanner.Source[A]):better.files.Scanner" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -425,103 +441,7 @@ See: http://codeforces.com/blog/entry/7018
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.LineNumberReader">LineNumberReader</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
-      </span>
-      
-      
-    </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(inputStream:java.io.InputStream,splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):better.files.Scanner"></a><a id="apply(InputStream,StringSplitter)(Charset):Scanner"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(inputStream:java.io.InputStream,splitter:better.files.StringSplitter)(implicitcharset:java.nio.charset.Charset):better.files.Scanner" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
-      </span>
-      
-      
-    </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(inputStream:java.io.InputStream)(implicitcharset:java.nio.charset.Charset):better.files.Scanner"></a><a id="apply(InputStream)(Charset):Scanner"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(inputStream:java.io.InputStream)(implicitcharset:java.nio.charset.Charset):better.files.Scanner" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="inputStream">inputStream: <span class="extype" name="java.io.InputStream">InputStream</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="charset">charset: <span class="extype" name="java.nio.charset.Charset">Charset</span> = <span class="symbol"><span class="name"><a href="index.html#DefaultCharset:java.nio.charset.Charset">DefaultCharset</a></span></span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
-      </span>
-      
-      
-    </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.Reader,splitter:better.files.StringSplitter):better.files.Scanner"></a><a id="apply(Reader,StringSplitter):Scanner"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(reader:java.io.Reader,splitter:better.files.StringSplitter):better.files.Scanner" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.Reader">Reader</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
-      </span>
-      
-      
-    </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(reader:java.io.Reader):better.files.Scanner"></a><a id="apply(Reader):Scanner"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(reader:java.io.Reader):better.files.Scanner" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="reader">reader: <span class="extype" name="java.io.Reader">Reader</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
-      </span>
-      
-      
-    </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(str:String,splitter:better.files.StringSplitter):better.files.Scanner"></a><a id="apply(String,StringSplitter):Scanner"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(str:String,splitter:better.files.StringSplitter):better.files.Scanner" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
-      </span>
-      
-      
-    </li><li name="better.files.Scanner#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(str:String):better.files.Scanner"></a><a id="apply(String):Scanner"></a>
-      <span class="permalink">
-      <a href="../../better/files/Scanner$.html#apply(str:String):better.files.Scanner" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="str">str: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="a">a: <span class="extype" name="better.files.Scanner.apply.A">A</span></span>, <span name="splitter">splitter: <a href="StringSplitter.html" class="extype" name="better.files.StringSplitter">StringSplitter</a> = <span class="symbol"><span class="name"><a href="StringSplitter$.html">StringSplitter.Default</a></span></span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="Scanner$$Source.html" class="extype" name="better.files.Scanner.Source">Source</a>[<span class="extype" name="better.files.Scanner.apply.A">A</span>]</span>)</span><span class="result">: <a href="Scanner.html" class="extype" name="better.files.Scanner">Scanner</a></span>
       </span>
       
       
@@ -856,6 +776,22 @@ See: http://codeforces.com/blog/entry/7018
       </span>
       <span class="symbol">
         <a title="" href="Scanner$$Read$.html"><span class="name">Read</span></a>
+      </span>
+      
+      
+    </li><li name="better.files.Scanner.Source" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Source"></a><a id="Source:Source"></a>
+      <span class="permalink">
+      <a href="../../better/files/Scanner$.html#Source" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="Scanner$$Source$.html"><span class="name">Source</span></a>
       </span>
       
       
